@@ -5,7 +5,7 @@ public class Humain {
     protected String prenom;
     protected int age;
 
-   
+
     public Humain(String nom, String prenom, int age) {
         this.nom = nom;
         this.prenom = prenom;
@@ -13,7 +13,13 @@ public class Humain {
     }
 
    
+    @Override
+    public String toString() {
+        return "Nom : " + nom + ", Prénom : " + prenom + ", Âge : " + age;
+    }
+
+ 
     public void details() {
-        System.out.println("Nom : " + nom + ", Prénom : " + prenom + ", Âge : " + age);
+        System.out.println(this.toString());
     }
 }
